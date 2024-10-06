@@ -56,7 +56,7 @@ if __name__ == '__main__':
     # Parse command-line arguments
     parser = argparse.ArgumentParser(description='Convert CSV data to WAV file')
     parser.add_argument('csv_file', help='Path to the CSV file')
-    parser.add_argument('sample_rate', type=int, help='Sample rate in Hz')
+    parser.add_argument('sample_rate', type=float, help='Sample rate in Hz')
     parser.add_argument('output_file', help='Path to the output WAV file')
     parser.add_argument('-c', '--columns', nargs='+', type=int, help='Column indices to convert')
     parser.add_argument('-s', '--scale', action='store_true', help='Scale the data between min/max signed 16-bit values')
